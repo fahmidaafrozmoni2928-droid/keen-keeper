@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "name": "Ayesha Rahman",
+      "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+      "email": "ayesha.rahman@gmail.com",
+      "days_since_contact": 18,
+      "status": "overdue",
+      "tags": ["university", "close friend"],
+      "bio": "We studied Computer Science together and used to work on projects late at night. She now works as a software engineer in Dhaka.",
+      "goal": 14,
+      "next_due_date": "2026-03-25"
+    },
+    {
+      "id": 2,
+      "name": "Tanvir Hasan",
+      "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+      "email": "tanvir.hasan@yahoo.com",
+      "days_since_contact": 10,
+      "status": "almost due",
+      "tags": ["office", "gym buddy"],
+      "bio": "Met at my first job. We go to the gym together and talk about fitness and career growth.",
+      "goal": 12,
+      "next_due_date": "2026-04-16"
+    },
+    {
+      "id": 3,
+      "name": "Nusrat Jahan",
+      "picture": "https://randomuser.me/api/portraits/women/34.jpg",
+      "email": "nusrat.jahan@outlook.com",
+      "days_since_contact": 5,
+      "status": "on-track",
+      "tags": ["school", "best friend"],
+      "bio": "My school best friend. We still share everything and try to meet at least once a month.",
+      "goal": 14,
+      "next_due_date": "2026-04-23"
+    },
+    {
+      "id": 4,
+      "name": "Rakib Ahmed",
+      "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+      "email": "rakib.ahmed@gmail.com",
+      "days_since_contact": 20,
+      "status": "overdue",
+      "tags": ["neighbor", "childhood"],
+      "bio": "We grew up in the same neighborhood. Used to play cricket every afternoon during childhood.",
+      "goal": 15,
+      "next_due_date": "2026-03-28"
+    },
+    {
+      "id": 5,
+      "name": "Farzana Kabir",
+      "picture": "https://randomuser.me/api/portraits/women/56.jpg",
+      "email": "farzana.kabir@gmail.com",
+      "days_since_contact": 13,
+      "status": "almost due",
+      "tags": ["colleague", "designer"],
+      "bio": "Worked together on a UI/UX project. She’s very creative and always shares design inspiration.",
+      "goal": 14,
+      "next_due_date": "2026-04-15"
+    },
+    {
+      "id": 6,
+      "name": "Imran Hossain",
+      "picture": "https://randomuser.me/api/portraits/men/60.jpg",
+      "email": "imran.hossain@protonmail.com",
+      "days_since_contact": 7,
+      "status": "on-track",
+      "tags": ["football", "friend"],
+      "bio": "We play football together on weekends. He’s very energetic and loves sports discussions.",
+      "goal": 14,
+      "next_due_date": "2026-04-20"
+    },
+    {
+      "id": 7,
+      "name": "Sadia Islam",
+      "picture": "https://randomuser.me/api/portraits/women/71.jpg",
+      "email": "sadia.islam@gmail.com",
+      "days_since_contact": 16,
+      "status": "overdue",
+      "tags": ["online friend", "developer"],
+      "bio": "Met through a coding community. We often discuss React projects and new tech trends.",
+      "goal": 14,
+      "next_due_date": "2026-04-01"
+    },
+    {
+      "id": 8,
+      "name": "Mahmudul Karim",
+      "picture": "https://randomuser.me/api/portraits/men/80.jpg",
+      "email": "mahmudul.karim@gmail.com",
+      "days_since_contact": 3,
+      "status": "on-track",
+      "tags": ["cousin", "family"],
+      "bio": "My cousin who lives nearby. We meet during family gatherings and share business ideas.",
+      "goal": 10,
+      "next_due_date": "2026-04-21"
+    }
+  ]
