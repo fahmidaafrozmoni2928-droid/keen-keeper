@@ -3,12 +3,13 @@ import { Link, NavLink } from "react-router";
 import { FaHome } from "react-icons/fa";
 import { RiTimeLine } from "react-icons/ri";
 import { IoAnalyticsSharp } from "react-icons/io5";
+import logoImg from "../assets/logo.png";
 const Navber = () => {
     return(
         <div className="w-full bg-base-100 shadow-sm">
       <div className="navbar   container mx-auto">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl">KeenKeeper</a>
+    <img src={logoImg}></img>
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1 space-x-3">
