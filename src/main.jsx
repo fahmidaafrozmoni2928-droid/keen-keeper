@@ -9,6 +9,7 @@ import Timeline from './Timeline/Timeline'
 import Status from './Status/Status'
 import CardDetails from './CardDetails/CardDetails'
 import CallProvider from './CallProvider/CallProvider'
+import { ToastContainer } from 'react-toastify'
 
 
 
@@ -44,7 +45,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CallProvider>
     <RouterProvider router={router}></RouterProvider>
+    
     </CallProvider>
- 
+    <ToastContainer></ToastContainer>
   </StrictMode>,
 )

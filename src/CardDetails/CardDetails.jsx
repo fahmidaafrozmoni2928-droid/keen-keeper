@@ -7,6 +7,7 @@ import callImg from "../assets/call.png"
 import textImg from "../assets/text.png"
 import videoImg from "../assets/video.png"
 import { callContext } from "../CallProvider/CallProvider";
+import { toast } from "react-toastify";
 const CardDetails = () => {
    
 const {setCall} = useContext(callContext);
@@ -15,12 +16,15 @@ const {setCall} = useContext(callContext);
     console.log(id);
     const handleCall = () => {
       setCall(prev => [...prev, {...findFriend, type: "Call"}]);
+      toast(`Call with ${findFriend.name}`);
     }
     const handleText = () => {
       setCall(prev => [...prev, {...findFriend, type: "Text"}]);
+      toast(`Text with ${findFriend.name}`);
     }
     const handleVideo = () => {
       setCall(prev => [...prev, {...findFriend, type: "Video"}]);
+      toast(`Video with ${findFriend.name}`);
     }
    
 
