@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import vectorImg from "../assets/vector.png"
 import archiveImg from "../assets/archive.png"
@@ -6,16 +6,33 @@ import trashImg from "../assets/Trash.png"
 import callImg from "../assets/call.png"
 import textImg from "../assets/text.png"
 import videoImg from "../assets/video.png"
+import { callContext } from "../CallProvider/CallProvider";
 const CardDetails = () => {
-
+   
+const {setCall} = useContext(callContext);
+     
     const {id} = useParams();
     console.log(id);
+    const handleCall = () => {
+      setCall(prev => [...prev, {...findFriend, type: "Call"}]);
+    }
+    const handleText = () => {
+      setCall(prev => [...prev, {...findFriend, type: "Text"}]);
+    }
+    const handleVideo = () => {
+      setCall(prev => [...prev, {...findFriend, type: "Video"}]);
+    }
+   
 
     const friends = useLoaderData();
     console.log(friends);
 
     const findFriend = friends.find(friend => friend.id == id);
     console.log(findFriend);
+
+    if(findFriend.length === 0){
+      return <p>card is empty</p>
+    }
     return(
       <div className=" bg-base-200">
         <div className="container mx-auto grid grid-cols-2">
@@ -119,17 +136,18 @@ const CardDetails = () => {
         <h2 className="font-bold text-xl  pr-90">Quick Check-In</h2>
 
         <div className="flex gap-5">
-        <div className="card bg-base-200 w-40 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
+        <div onClick={()=> handleCall("Call")} className=" card bg-base-200 w-40 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
         
         <img src={callImg}></img>
        <p className=" text-gray-600">Call</p>
+       
         </div>
-        <div className="card bg-base-200 w-40 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
+        <div onClick={()=> handleText("Text")} className="card bg-base-200 w-40 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
         
         <img src={textImg}></img>
        <p className=" text-gray-600">Text</p>
         </div>
-        <div className="card bg-base-200 w-40 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
+        <div onClick={()=> handleVideo("video")} className="card bg-base-200 w-40 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
         
         <img src={videoImg}></img>
        <p className=" text-gray-600">Video</p>

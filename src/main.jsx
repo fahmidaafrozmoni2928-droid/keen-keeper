@@ -8,6 +8,7 @@ import Home from './Home/Home'
 import Timeline from './Timeline/Timeline'
 import Status from './Status/Status'
 import CardDetails from './CardDetails/CardDetails'
+import CallProvider from './CallProvider/CallProvider'
 
 
 
@@ -41,6 +42,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router}></RouterProvider> 
+    <CallProvider>
+    <RouterProvider router={router}></RouterProvider>
+    </CallProvider>
+ 
   </StrictMode>,
 )

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const Card = ({friend}) => {
+const Card = ({friend, call, setCall}) => {
     return(
         <div>
 <Link to={`/carddetails/${friend.id}`} className="card bg-base-100 w-80 shadow-sm rounded-lg container mx-auto ">
