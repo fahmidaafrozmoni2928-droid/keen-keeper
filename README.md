@@ -28,7 +28,9 @@ React Icons
 git clone https://github.com/fahmidaafrozmoni2928-droid/keen-keeper.git
 
 cd keen-keeper
+
 npm install
+
 npm run dev
 
 🎯 Main Concept
