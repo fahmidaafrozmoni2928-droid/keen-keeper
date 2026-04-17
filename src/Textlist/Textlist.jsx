@@ -10,7 +10,7 @@ const Textlist = () => {
         {
             call?.map((call, index)=> {
                 return <div>
-                 {call.type == "Text" &&  ( <div key={index} className="card bg-base-200 w-350 shadow-sm rounded-lg container mx-auto px-4 py-4 mt-5 flex ">
+                 {call.type == "Text" &&  ( <div key={index} className="w-135 card bg-base-200  shadow-sm rounded-lg container mx-auto px-4 py-4 mt-5 flex lg:w-350">
                         <div className="flex gap-3">
         <div>
         <img className="w-10 h-10" src={textImg}></img>

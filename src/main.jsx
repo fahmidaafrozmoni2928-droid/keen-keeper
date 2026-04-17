@@ -10,6 +10,7 @@ import Status from './Status/Status'
 import CardDetails from './CardDetails/CardDetails'
 import CallProvider from './CallProvider/CallProvider'
 import { ToastContainer } from 'react-toastify'
+import ErrorPage from './ErrorPage/ErrorPage'
 
 
 
@@ -20,23 +21,29 @@ const router = createBrowserRouter([
     children:[
       {
         index:true,
+        loader:() => fetch("friends.json"),
         element:<Home/> 
       },
       {
         path:"/timeline",
+        loader:() => fetch("friends.json"),
         element:<Timeline/>
       },
       {
         path:"/status",
+        loader:() => fetch("friends.json"),
         element:<Status/>
       },
       {
         path:"/carddetails/:id",
-        loader:()=> fetch("friends.json"),
+        loader:() => fetch("friends.json"),
+        
+        
         element:<CardDetails></CardDetails>
       }
-    ]
-  }
+    ],
+   errorElement:<ErrorPage></ErrorPage>,
+  },
 ]
 
 )

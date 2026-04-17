@@ -39,7 +39,7 @@ const {setCall} = useContext(callContext);
     }
     return(
       <div className=" bg-base-200">
-        <div className="container mx-auto grid grid-cols-2">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
         <div className="bg-base-200 pt-10">
          <div  className="card bg-base-100 w-85 aspect-square shadow-sm rounded-lg container mx-auto ">
                 <figure>
@@ -100,20 +100,20 @@ const {setCall} = useContext(callContext);
               </div>
 
 <div>
-              <div className="flex gap-5 pt-4">
-        <div className="card bg-base-100 w-70 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
+              <div className="gap-3 flex  pt-4 lg:gap-5">
+        <div className="w-55  card bg-base-100  shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center lg:w-70">
         
                  <h2 className="font-bold text-xl">{findFriend.days_since_contact}</h2>
                 <p className=" text-gray-600">Days Since Contact</p>
                  </div>
 
 
-        <div className="card bg-base-100 w-70 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
+        <div className="w-55 card bg-base-100  shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center lg:w-70">
         
                  <h2 className="font-bold text-xl">{findFriend.goal}</h2>
                 <p className=" text-gray-600">Goal (Days)</p>
                  </div>
-        <div className="card bg-base-100 w-70 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
+        <div className="w-55 card bg-base-100  shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center lg:w-70">
         
                  <h2 className="font-bold text-xl">{findFriend.next_due_date}</h2>
                 <p className=" text-gray-600">Next Due</p>
@@ -124,10 +124,12 @@ const {setCall} = useContext(callContext);
 
 
                  <div>
-                 <div className="card bg-base-100 w-160 shadow-sm rounded-lg container mx-auto px-10 py-8 mt-5 flex justify-center items-center">
-        <div className="flex justify-between items-center space-x-100">
-        <h2 className="font-bold text-xl">Relationship Goal</h2>
-        <button className="btn">Edit</button>
+                 <div className="w-130 card bg-base-100 shadow-sm rounded-lg container mx-auto px-10 py-8 mt-5 flex justify-center items-center lg:w-160 ">
+        <div className="space-x-60 flex justify-between items-center lg:space-x-100 ">
+        <h2 className="ml-15 font-bold text-xl lg:ml-0">Relationship Goal</h2>
+        <div className="mr-40 lg:mr-0">
+        <button className=" btn">Edit</button>
+        </div>
         </div>
         <div className="pr-115">
        <p className=" text-gray-600 ">Connect every {findFriend.goal} days</p>
@@ -136,8 +138,8 @@ const {setCall} = useContext(callContext);
        
        
 </div>
-<div className="card bg-base-100 w-160 h-60 shadow-sm rounded-lg container mx-auto px-10 py-8 mt-5 flex justify-center items-center">
-        <h2 className="font-bold text-xl  pr-90">Quick Check-In</h2>
+<div className="w-130 card bg-base-100  h-60 shadow-sm rounded-lg container mx-auto px-10 py-8 mt-5 flex justify-center items-center lg:w-160">
+        <h2 className="pr-70 font-bold text-xl  lg:pr-90">Quick Check-In</h2>
 
         <div className="flex gap-5">
         <div onClick={()=> handleCall("Call")} className=" card bg-base-200 w-40 shadow-sm rounded-lg container mx-auto px-4 py-8 mt-5 flex justify-center items-center">
